@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import emailjs from "@emailjs/browser";
@@ -26,6 +26,22 @@ const Contact = () => {
         }
       );
     e.target.reset();
+  };
+
+  const [buttonText, setButtonText] = useState("Send message");
+  const handleClick = () => {
+    const name = form.current.user_name.value;
+    const email = form.current.user_email.value;
+    const message = form.current.message.value;
+
+    if (name && email && message) {
+      setButtonText("Thank you!");
+    } else {
+      setButtonText("Hmm...? Fill the form.");
+      setTimeout(() => {
+        setButtonText("Send Message!");
+      }, 3000);
+    }
   };
 
   return (
@@ -84,8 +100,9 @@ const Contact = () => {
               required
             ></textarea>
 
-            <button type="submit" className="btn btn-lg">
-              Send message
+            <button onClick={handleClick} type="submit" className="btn btn-lg">
+              {buttonText }
+              
             </button>
           </motion.form>
         </div>
