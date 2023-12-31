@@ -75,7 +75,7 @@ const Banner = () => {
               className="flex max-w-max gap-x-6 items-center mb-4 mx-auto lg:mx-0"
             >
               {/* TODO: UPDATE THE LINK TO REAL RESUME */}
-              <button className="btn btn-lg -z-1">Resume</button>
+              <a href="https://drive.google.com/file/d/1dscASU6OPsXyxibi8GPfV_vr3ZRqgVGF/view" className="btn btn-lg -z-1 flex items-center justify-center">Resume</a>
             </motion.div>
           </div>
         </div>
