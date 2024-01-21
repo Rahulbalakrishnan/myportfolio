@@ -36,9 +36,9 @@ const Services = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 lg:bg-services lg:bottom-0 bg-no-repeat mix-blend-lighten mb-12 lg:mb-0"
+            className="flex-1 lg:bg-services lg:bottom-0 lg:mb-0 bg-no-repeat mix-blend-lighten mb-1"
           >
-            <h2 className="h2 text-accent mt-20 mb-5 "> What I Do.</h2>
+            <h2 className="h2 text-accent mt-2 mb-5 "> What I Do.</h2>
           </motion.div>
 
           <motion.div

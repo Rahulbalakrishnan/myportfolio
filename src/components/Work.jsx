@@ -6,9 +6,9 @@ import Img3 from "../assets/portfolio-img2.jpg";
 
 const Work = () => {
   return (
-    <section id="work" className="section mt-32 sm:mt-28">
+    <section id="work" className="section mt-32 sm:mt-28 ">
       <div className="container mx-auto">
-        <div className="flex flex-col lg:flex-row gap-x-10">
+        <div className="flex flex-row items-center lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen">
           <motion.div
             variants={fadeIn("right", 0.3)}
             initial="hidden"
@@ -17,8 +17,8 @@ const Work = () => {
             className="flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0"
           >
             {/* text */}
-            <div>
-              <h2 className="h2 text-3xl leading-tight text-accent ">
+            <div >
+              <h2 className="  h2 text-3xl leading-tight text-accent ">
                 My Latest <br />
                 Work
               </h2>
