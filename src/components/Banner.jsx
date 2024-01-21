@@ -74,8 +74,8 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex max-w-max gap-x-6 items-center mb-4 mx-auto lg:mx-0"
             >
-              {/* TODO: UPDATE THE LINK TO REAL RESUME */}
-              <a href="https://drive.google.com/file/d/1dscASU6OPsXyxibi8GPfV_vr3ZRqgVGF/view" className="btn btn-lg -z-1 flex items-center justify-center">Resume</a>
+              {/* TODO: UPDATE THIS LINK AFTER RESUME UPDATION */}
+              <a href="https://drive.google.com/file/d/12LcLjarg9bX0zuPZTlna6q7ng-Q37mtx/view" className="btn btn-lg -z-1 flex items-center justify-center">Resume</a>
             </motion.div>
           </div>
         </div>
